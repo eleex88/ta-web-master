@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url(../fonts/open-sans-light.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url(../fonts/open-sans-regular.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+  height: 570px;
+  background-color: #f9f9f9;
+  background-image: url("../img/bg-header-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  margin-top: 190px;
+}
+
+.header__text {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.header__btn {
+  margin-top: 5px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+.services__head {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service__a {
+  margin-top: 35px;
+}
+
+.service__img {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service__heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #c49b1d;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300px;
+  line-height: 30px;
+}
+
+.service__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300px;
+  line-height: 26px;
+}
+
+.service__text--c {
+  padding-bottom: 230px;
+}
+
+.side {
+  text-align: center;
+  color: #fff;
+  background-color: #2f3506;
+}
+
+.side__wrapper {
+  margin: 0 auto;
+  margin-bottom: -100px;
+  height: 260px;
+  width: calc(100% - 30px);
+  background-image: url("../img/img-side1.jpg");
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  top: -210px;
+}
+
+.side__head {
+  margin-top: -80px;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+}
+
+.side__text,
+.side__info {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.side__btn {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 160px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: #c49b1d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.highlight__img {
+  display: block;
+
+  margin: 30px auto;
+}
+
+.highlight__text {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
+
+.section-video__heading {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-video__line {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.sponsors__img {
+  margin: 50px 0;
+}
+
+footer {
+  color: #fff;
+  background-color: #2f3506;
+}
+
+.footer__heading {
+  margin: 30px 0;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+  text-align: center;
+}
+
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 670px;
+}
+
+.footer__copyrights {
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.service-a,
+.service-b,
+.service-c{
+  opacity: 0;
+  transition: all 2s linear;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 660px;
+    background-image: url("../img/bg-header-tablets.jpg");
+    background-position: center;
+  }
+
+  .logo {
+    margin-top: 50px;
+  }
+
+  .header__text {
+    margin-top: 175px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .services__heading {
+    font-size: 20px;
+  }
+
+  .service__text--c {
+    padding-bottom: 0;
+  }
+
+  .side {
+    position: relative;
+    margin-top: 80px;
+  }
+
+  .side__wrapper {
+    position: absolute;
+    top: 0;
+    margin-top: -50px;
+    height: 100%;
+    width: calc(50% - 30px);
+    background-image: url("../img/img-side1.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .side__img {
+    position: absolute;
+    height: 95%;
+    width: auto;
+    margin: 0;
+    top: -50px;
+    left: -300px;
+  }
+
+  .side__head {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .side__text {
+    text-align: left;
+  }
+
+  .side__info {
+    display: none;
+  }
+
+  .highlight__text {
+    text-align: left;
+  }
+
+  .footer__heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .calendly-inline-widget {
+    height: 870px;
+  }
+
+  .footer__copyrights {
+    margin-top: 0;
+  }
+
+  .footer__logo {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background-image: url("../img/bg-header-desktop.jpg");
+  }
+
+  .header__text {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .services__head {
+    font-size: 30px;
+  }
+
+  .service__heading {
+    font-size: 30px;
+  }
+
+  .line {
+    width: 170px;
+  }
+
+  .side {
+    height: 600px;
+  }
+
+  .side__img {
+    height: 600px;
+    top: -50px;
+    left: -400px;
+  }
+
+  .side__head {
+    margin-top: 65px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 45px;
+    text-align: left;
+  }
+
+  .side__info {
+    display: block;
+  }
+
+  .highlight__text {
+    font-size: 22px;
+    line-height: 55px;
+    letter-spacing: 0;
+  }
+
+  .section-video__heading {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .calendly-inline-widget {
+    height: 670px;
+  }
+}
